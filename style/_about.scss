@@ -1,5 +1,5 @@
 .about {
-  padding: 1.8125rem;
+  padding: 1.81rem;
   margin: 2.25rem 0;
   display: flex;
   flex-direction: column;
@@ -121,12 +121,14 @@
   }
 
   @media (max-width: 768px) {
-    h2 {
+    padding: 0.1rem;
+
+    h2 {  
       font-size: 2.2rem;
     }
 
     .about-cards {
-      font-size: 1.1rem;
+      font-size: .8rem;
     }
 
     .about-card {

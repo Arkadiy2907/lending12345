@@ -30,12 +30,12 @@ html {
 }
 @media (max-width: 768px) {
   html {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 @media (max-width: 480px) {
   html {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
@@ -193,7 +193,7 @@ html {
   padding: 1.25rem 0 0 3.75rem;
   border-radius: 1.6rem;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   width: 100%;
   max-width: 77rem;
@@ -286,12 +286,15 @@ html {
   }
 }
 @media (max-width: 900px) {
+  .hero {
+    padding-left: 1.5rem;
+  }
   .hero .hero-content h1 {
     font-size: 1.9rem;
     margin-bottom: 0.7rem;
   }
   .hero .hero-content h1 span {
-    font-size: 2rem;
+    font-size: 2.1rem;
   }
   .hero .hero-content p {
     margin-bottom: 1rem;
@@ -299,7 +302,30 @@ html {
   .hero .hero-content p:nth-of-type(1) {
     font-size: 1.2rem;
   }
+  .hero .hero-content p:nth-of-type(2) {
+    font-size: 1rem;
+  }
   .hero .hero-button {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 800px) {
+  .hero {
+    padding-left: 1.25rem;
+  }
+  .hero .hero-content h1 {
+    font-size: 1.8rem;
+  }
+  .hero .hero-content h1 span {
+    font-size: 1.9rem;
+  }
+  .hero .hero-content p {
+    margin-bottom: 0.8rem;
+  }
+  .hero .hero-content p:nth-of-type(1) {
+    font-size: 1.1rem;
+  }
+  .hero .hero-content p:nth-of-type(2) {
     font-size: 0.9rem;
   }
 }
@@ -317,21 +343,30 @@ html {
     font-size: 1.3rem;
   }
   .hero .hero-content p:nth-of-type(2) {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   .hero .hero-button {
     font-size: 0.8rem;
+  }
+}
+@media (max-width: 705px) {
+  .hero .hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 100%;
+  }
+  .hero .hero-image {
+    margin-left: -6rem;
+  }
+  .hero .hero-image img {
+    filter: blur(4px);
+    opacity: 0.6;
   }
 }
 @media (max-width: 480px) {
   .hero .hero-button {
     padding: 0.75rem 2rem;
     font-size: 1.25rem;
-  }
-}
-@media (max-width: 324px) {
-  .hero .hero-image {
-    display: none;
   }
 }
 
@@ -405,7 +440,7 @@ html {
   }
 }
 .about {
-  padding: 1.8125rem;
+  padding: 1.81rem;
   margin: 2.25rem 0;
   display: flex;
   flex-direction: column;
@@ -508,11 +543,14 @@ html {
   }
 }
 @media (max-width: 768px) {
+  .about {
+    padding: 0.1rem;
+  }
   .about h2 {
     font-size: 2.2rem;
   }
   .about .about-cards {
-    font-size: 1.1rem;
+    font-size: 0.8rem;
   }
   .about .about-card {
     padding: 1rem 0.8rem 1rem 2.4rem;
